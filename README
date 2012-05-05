@@ -1,0 +1,13 @@
+Le but du projet est de réaliser un robot de télésurveillance, il doit pouvoir effectuer des rondes dans son environnement de façon autonome, détecter des intrus, prévenir l’utilisateur de cette détection le cas échéant et enfin pouvoir être piloter manuellement d’un terminal mobile ou d’une station de travail classique.
+
+Liste des exigences
+
+   1. Mise en place d’un site web afin de tracer l’avancement du projet
+   2. Robot a 4 roues pouvant se déplacer
+   3. Développement de la fonction permettant au robot d’effectuer des rondes de façon autonome dans l’environnement
+   4. La plateforme mobile doit pouvoir communiquer avec d’autre terminaux en WIFI
+   5. Caméra motorisée pouvant être pilotée a distance
+   6. Application pour un terminal mobile permettant d’administrer le robot
+   7. Développement de la fonctionnalité permettant de détecter des intrus a l’aide de la caméra
+
+Utiliser la commande make romeo pour builder les sources correspondant a la carte Arduino
