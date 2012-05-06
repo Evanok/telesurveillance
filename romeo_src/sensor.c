@@ -1,5 +1,7 @@
 #include "sensor.h"
 
+int static r = 0;
+
 void handle_obstacle ()
 {
   int i;
@@ -19,19 +21,19 @@ void handle_obstacle ()
   right_avg = right_avg / 5;
 
   // zero obstacle in the both side
-  if (left_avg < conf_sensor && right_avg < conf_sensor)
+  if (left_avg < CONF_SENSOR && right_avg < CONF_SENSOR)
   {
     move_forward();
     delay (300);
   }
   // one obstacle on the left side
-  else if (left_avg >= conf_sensor && right_avg < conf_sensor)
+  else if (left_avg >= CONF_SENSOR && right_avg < CONF_SENSOR)
   {
     turn_right ();
     delay (300);
   }
   // one obstacle on the right side
-  else if (right_avg >= conf_sensor && left_avg < conf_sensor)
+  else if (right_avg >= CONF_SENSOR && left_avg < CONF_SENSOR)
   {
     turn_left ();
     delay (300);

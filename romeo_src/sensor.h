@@ -12,12 +12,11 @@
 # define SENSOR_H_
 
 #include "motor.h"
-#include "WProgram.h"
+#include "Arduino.h"
 
-
-#define LEFT_SENSOR = 0; // pin analog 0
-#define RIGHT_SENSOR = 2; // pin analog 2
-#define CONF_SENSOR = 190;
+#define LEFT_SENSOR 0 // pin analog 0
+#define RIGHT_SENSOR 2 // pin analog 2
+#define CONF_SENSOR 190
 
 /* use value send by sensor to handle obstacle */
 void handle_obstacle ();

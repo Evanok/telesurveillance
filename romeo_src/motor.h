@@ -11,14 +11,14 @@
 #ifndef MOTOR_H_
 # define MOTOR_H_
 
-#include "WProgram.h"
+#include "Arduino.h"
 
-#define E1 = 5;     //M1 Speed Control
-#define E2 = 6;     //M2 Speed Control
-#define M1 = 4;    //M1 Direction Control
-#define M2 = 7;    //M1 Direction Control
+#define E1 5     //M1 Speed Control
+#define E2 6     //M2 Speed Control
+#define M1 4    //M1 Direction Control
+#define M2 7    //M1 Direction Control
 
-#define SPEED = 200;
+#define SPEED 200
 
 /* move forward */
 void move_forward();
