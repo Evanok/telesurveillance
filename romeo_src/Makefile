@@ -30,6 +30,9 @@ romeo: core motor.o sensor.o romeo.o
 
 	$(CC) $(ELF_FLAGS) -o romeo.elf romeo.o motor.o sensor.o core.a -L . -lm
 
+	avr-objcopy -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0 romeo.elf romeo.eep
+	avr-objcopy -O ihex -R .eeprom romeo.elf romeo.hex
+
 	@echo " done.";
 
 .c.o:
@@ -59,4 +62,6 @@ clean:
 	rm -f *.o
 	rm -f *.a
 	rm -f *.elf
+	rm -f *.eep
+	rm -f *.hex
 	@echo "done.";
