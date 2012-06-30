@@ -1,0 +1,3 @@
+[submodule "snowball_builder"]
+	path = snowball_builder
+	url = https://github.com/Evanok/snowball_builder.git
